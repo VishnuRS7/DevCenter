@@ -1,0 +1,57 @@
+DATABASE COMMANDS
+1.View all databases
+show dbs
+2.Create a new or switch databases
+use DBName
+3.View current Database
+db
+4.Delete Database 
+db.dropDatabase() //drops the current position
+
+Collection Commands
+1.Show Collections
+show collections
+2.Create a collection named 'names'
+db.createCollection('names')
+3.Drop a collection named 'names'
+db.names.drop()
+4.Row(Document) Commands
+db.comments.find()
+5.Show all Rows in a Collection (Prettified)
+db.comments.find().pretty()
+6.Find the first row matching the object
+db.names.findOne({name: 'Vishnu})
+7.Insert One Row
+db.Name.insert({
+    'Name': 'Vishnu',
+    'DOB': '07/02/2000',
+    'Address: 'Hospet'
+ })
+8.Insert Many rows
+db.name.insertMany([{
+    'Name': 'Sarvottama',
+    'DOB': '02/06/1965',
+    'Address: 'Hospet'
+},
+{'Name': 'Vinu',
+  'DOB': '31/12/1967',
+  'Address: 'Hospet'
+},
+{'Name': 'Vasu',
+ 'DOB': '18/03/1997',
+ 'Address: 'Hospet'
+}])
+9.Limit the number of rows in output
+db.Name.find().pretty().limit(2)
+{
+        "_id" : ObjectId("62432a69516435e3d2a8f00d"),
+        "Name" : "Vishnu",
+        "DOB" : "07/02/2000",
+        "Address" : "Hospet"
+}
+{
+        "_id" : ObjectId("62432bb5516435e3d2a8f00e"),
+        "Name" : "Sarvottama",
+        "DOB" : "02/06/1965",
+        "Address" : "Hospet"
+}
