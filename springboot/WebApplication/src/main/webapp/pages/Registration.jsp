@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Student Database</title>
 </head>
 <body>
 <h1>Enter the registration details</h1>
-<form action="addStudent">
+<form method="post" action="addStudent" >
 Enter Student ID:<input type="text" name="id"/><br>
 Enter Student Name:<input type="text" name="name"/><br>
 Enter Student E-Mail:<input type="email" name="email"/><br>

@@ -7,10 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>View Student Details</h1>
-<form action="getStudentDetails" method="post">
-Enter the Student ID:<input type="text" name="id"/>
-<input type="submit" value="Submit"/>
-</form>
+<h1>Students Database</h1>
+<h4>${students}</h4>
+<a href="getStudentDetails">Click here to Logout</a>
 </body>
 </html>
